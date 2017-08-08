@@ -1,3 +1,5 @@
+/* Without using Built-In-Function*/
+
 function reverseString(string) {
     var reversedString = "";
     var stringLength = string.length - 1;
@@ -6,3 +8,21 @@ function reverseString(string) {
     }
     return reversedString;
 }
+
+Out: reverseString("MyNameisdileep");
+     "peelidsiemaNyM"
+
+/*Using Built-In-Function*/
+function reverseString(s){
+    return s.split("").reverse().join("");
+}
+
+Out: reverseString("hello world");
+     "dlrow olleh"
+
+function reverseEachWord(s) {
+    return s.split(" ").map(reverseString).join(" ");
+}
+
+Out: reverseEachWord("hello world");
+     "olleh dlrow"
