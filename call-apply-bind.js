@@ -34,7 +34,7 @@ Use .bind() when you want that function to later be called with a certain contex
 
 Call/apply call the function immediately, whereas bind returns a function that, when later executed, will have the correct context set for calling the original function. This way you can maintain context in async callbacks and events.
 
-I do this a lot:
+I do this a lot: -
 
 function MyObject(element) {
     this.elm = element;
